@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController">
+            <connections>
+                <outlet property="backCollectionView" destination="Q5p-ef-qEv" id="gIY-Jk-dXA"/>
+                <outlet property="titleCollectionView" destination="Gyv-BN-Ztm" id="qSk-fv-zy4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwQ-8a-FCs">
+                    <rect key="frame" x="0.0" y="64" width="30" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="7jZ-f5-e7i"/>
+                        <constraint firstAttribute="height" constant="40" id="ftV-9b-21K"/>
+                        <constraint firstAttribute="height" constant="40" id="xtJ-d3-57v"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ftV-9b-21K"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="7jZ-f5-e7i"/>
+                            <include reference="ftV-9b-21K"/>
+                            <exclude reference="xtJ-d3-57v"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVu-0a-UBa">
+                    <rect key="frame" x="345" y="64" width="30" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3TI-i7-CdE"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Fzs-SL-T1I"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="acd-hp-N82"/>
+                        <constraint firstAttribute="width" constant="30" id="ktl-ZS-jFl"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="acd-hp-N82"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="acd-hp-N82"/>
+                        </mask>
+                    </variation>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-ef-qEv">
+                    <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lnF-Zp-Nbq">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dWR-2D-4qE"/>
+                        <outlet property="delegate" destination="-1" id="ls8-b8-Mgt"/>
+                    </connections>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gyv-BN-Ztm">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DV3-Zf-sDM"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K8H-iF-zhD">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DV3-Zf-sDM"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="DV3-Zf-sDM"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ptc-4B-Ljb"/>
+                        <outlet property="delegate" destination="-1" id="RqR-tg-F5P"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CwQ-8a-FCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hem-2G-Jf2"/>
+                <constraint firstAttribute="trailing" secondItem="Q5p-ef-qEv" secondAttribute="trailing" id="PRZ-Mf-uPl"/>
+                <constraint firstItem="Q5p-ef-qEv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TLV-K3-cCT"/>
+                <constraint firstAttribute="trailing" secondItem="OVu-0a-UBa" secondAttribute="trailing" id="UCj-v8-nkq"/>
+                <constraint firstItem="CwQ-8a-FCs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Y5a-8K-lhj"/>
+                <constraint firstItem="OVu-0a-UBa" firstAttribute="leading" secondItem="Gyv-BN-Ztm" secondAttribute="trailing" constant="8" id="aYI-Zn-VMy"/>
+                <constraint firstItem="Gyv-BN-Ztm" firstAttribute="leading" secondItem="CwQ-8a-FCs" secondAttribute="trailing" id="fCa-DE-vBw">
+                    <variation key="widthClass=compact" constant="4"/>
+                </constraint>
+                <constraint firstItem="CwQ-8a-FCs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ge9-sO-Bxk"/>
+                <constraint firstAttribute="bottom" secondItem="Q5p-ef-qEv" secondAttribute="bottom" id="lRz-AA-hyR"/>
+                <constraint firstItem="OVu-0a-UBa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="o9a-2Z-bej"/>
+                <constraint firstItem="OVu-0a-UBa" firstAttribute="leading" secondItem="Gyv-BN-Ztm" secondAttribute="trailing" id="pHm-5Z-9s0"/>
+                <constraint firstItem="OVu-0a-UBa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="rII-3R-B6W"/>
+                <constraint firstItem="Gyv-BN-Ztm" firstAttribute="centerX" secondItem="Q5p-ef-qEv" secondAttribute="centerX" id="rPT-F0-BDE"/>
+                <constraint firstItem="Q5p-ef-qEv" firstAttribute="top" secondItem="OVu-0a-UBa" secondAttribute="bottom" id="t9c-9j-73p"/>
+                <constraint firstItem="CwQ-8a-FCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vua-kh-8Q4"/>
+                <constraint firstItem="Gyv-BN-Ztm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="wfK-xN-52T"/>
+                <constraint firstItem="OVu-0a-UBa" firstAttribute="leading" secondItem="Gyv-BN-Ztm" secondAttribute="trailing" id="wvp-3O-wum">
+                    <variation key="widthClass=compact" constant="4"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Gyv-BN-Ztm"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="fCa-DE-vBw"/>
+                    <exclude reference="rPT-F0-BDE"/>
+                    <exclude reference="wfK-xN-52T"/>
+                    <exclude reference="Y5a-8K-lhj"/>
+                    <exclude reference="vua-kh-8Q4"/>
+                    <exclude reference="aYI-Zn-VMy"/>
+                    <exclude reference="o9a-2Z-bej"/>
+                    <exclude reference="pHm-5Z-9s0"/>
+                    <exclude reference="wvp-3O-wum"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Gyv-BN-Ztm"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="fCa-DE-vBw"/>
+                    <include reference="rPT-F0-BDE"/>
+                    <include reference="wfK-xN-52T"/>
+                    <exclude reference="Hem-2G-Jf2"/>
+                    <include reference="Y5a-8K-lhj"/>
+                    <exclude reference="ge9-sO-Bxk"/>
+                    <include reference="vua-kh-8Q4"/>
+                    <exclude reference="aYI-Zn-VMy"/>
+                    <include reference="o9a-2Z-bej"/>
+                    <exclude reference="pHm-5Z-9s0"/>
+                    <include reference="wvp-3O-wum"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="251.5" y="311.5"/>
+        </view>
+    </objects>
+</document>

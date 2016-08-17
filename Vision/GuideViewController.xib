@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FZLTXIHJW--GB1-0.TTF">
+            <string>FZLTXIHJW--GB1-0</string>
+        </mutableArray>
+        <mutableArray key="FZLTZCHJW--GB1-0.TTF">
+            <string>FZLTZCHJW--GB1-0</string>
+        </mutableArray>
+        <mutableArray key="Lobster 1.4.otf">
+            <string>Lobster1.4</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideViewController">
+            <connections>
+                <outlet property="detaillabel" destination="2Ob-h3-lX1" id="yOg-tX-0r7"/>
+                <outlet property="intoBtn" destination="s0y-er-n2h" id="etr-mV-OVx"/>
+                <outlet property="titlelabel" destination="8mn-09-Zf6" id="h1X-db-lfn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-er-n2h">
+                    <rect key="frame" x="250" y="497" width="100" height="33"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ily-8s-eaU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FZLTZCHJW--GB1-0" family="FZLanTingHeiS-DB1-GB" pointSize="17"/>
+                    <size key="titleShadowOffset" width="0.0" height="-1"/>
+                    <state key="normal" title="打开视野">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="intoAction:" destination="-1" eventType="touchUpInside" id="qFJ-h4-R1c"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vision" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mn-09-Zf6">
+                    <rect key="frame" x="239" y="80" width="122" height="64"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="50"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open field of vision" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-h3-lX1">
+                    <rect key="frame" x="0.0" y="154" width="600" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2Ob-h3-lX1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F6X-mK-9r7"/>
+                <constraint firstItem="s0y-er-n2h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gwd-8g-825"/>
+                <constraint firstAttribute="bottom" secondItem="s0y-er-n2h" secondAttribute="bottom" constant="70" id="OEH-wS-rRd"/>
+                <constraint firstItem="8mn-09-Zf6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QRl-sl-gpg"/>
+                <constraint firstAttribute="trailing" secondItem="2Ob-h3-lX1" secondAttribute="trailing" id="etH-47-Fty"/>
+                <constraint firstItem="2Ob-h3-lX1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fCC-SW-Yrk"/>
+                <constraint firstItem="8mn-09-Zf6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="fKx-H0-Hav"/>
+                <constraint firstItem="2Ob-h3-lX1" firstAttribute="top" secondItem="8mn-09-Zf6" secondAttribute="bottom" constant="10" id="tgs-KF-M2h"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  Vision
+//
+//  Created by dllo on 16/3/11.
+//  Copyright © 2016年 yue_zhang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "SDImageCache.h"
+#import "SVProgressHUD.h"
+#import "Masonry.h"
+#import "FMDB.h"
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SELF_WIDTH self.frame.size.width
+#define SELF_HEIGHT self.frame.size.height]
+
+#endif /* PrefixHeader_pch */

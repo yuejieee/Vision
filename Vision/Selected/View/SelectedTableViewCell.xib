@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FZLTXIHJW--GB1-0.TTF">
+            <string>FZLTXIHJW--GB1-0</string>
+        </mutableArray>
+        <mutableArray key="FZLTZCHJW--GB1-0.TTF">
+            <string>FZLTZCHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="230" id="KGk-i7-Jjw" customClass="SelectedTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-BE-q58">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
+                    </imageView>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cj3-o8-LEu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mdE-Yy-kSB">
+                        <rect key="frame" x="8" y="90" width="359" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCy-z0-Zwg">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="21"/>
+                                <fontDescription key="fontDescription" name="FZLTZCHJW--GB1-0" family="FZLanTingHeiS-DB1-GB" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6J-wb-V4t">
+                                <rect key="frame" x="0.0" y="31" width="359" height="18"/>
+                                <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mdE-Yy-kSB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2Pg-o5-6Cv"/>
+                    <constraint firstAttribute="bottom" secondItem="ndy-BE-q58" secondAttribute="bottom" id="Mkl-bZ-C5D"/>
+                    <constraint firstItem="mdE-Yy-kSB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NTo-dA-tLw"/>
+                    <constraint firstAttribute="trailing" secondItem="Cj3-o8-LEu" secondAttribute="trailing" id="Oga-lp-Oey"/>
+                    <constraint firstItem="Cj3-o8-LEu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wi6-1l-AME"/>
+                    <constraint firstAttribute="trailing" secondItem="ndy-BE-q58" secondAttribute="trailing" id="g4G-Wh-fIX"/>
+                    <constraint firstAttribute="bottom" secondItem="Cj3-o8-LEu" secondAttribute="bottom" id="h17-Gd-fZp"/>
+                    <constraint firstItem="ndy-BE-q58" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hWw-o0-t4T"/>
+                    <constraint firstItem="Cj3-o8-LEu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jcE-v4-joA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mdE-Yy-kSB" secondAttribute="trailing" id="k7E-UC-Yia"/>
+                    <constraint firstItem="mdE-Yy-kSB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oi7-90-JGU"/>
+                    <constraint firstItem="ndy-BE-q58" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vtl-fQ-k3Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="V6J-wb-V4t" id="acA-vj-JvZ"/>
+                <outlet property="imgView" destination="ndy-BE-q58" id="Uga-4p-Bmc"/>
+                <outlet property="titleLabel" destination="RCy-z0-Zwg" id="kZW-EJ-hed"/>
+            </connections>
+            <point key="canvasLocation" x="511.5" y="361"/>
+        </tableViewCell>
+    </objects>
+</document>

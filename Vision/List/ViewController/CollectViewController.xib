@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FZLTXIHJW--GB1-0.TTF">
+            <string>FZLTXIHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectViewController">
+            <connections>
+                <outlet property="label" destination="vec-XK-d0A" id="1ND-vH-Zrs"/>
+                <outlet property="tableView" destination="TUG-qM-6YY" id="qAD-Tq-oHx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-qM-6YY">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="UgL-Hi-BPO"/>
+                        <constraint firstAttribute="height" constant="128" id="oyI-pZ-WZz"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="UgL-Hi-BPO"/>
+                            <exclude reference="oyI-pZ-WZz"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pLb-Ag-857"/>
+                        <outlet property="delegate" destination="-1" id="rCD-QG-hMM"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你收藏的视频可以在这里找到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vec-XK-d0A">
+                    <rect key="frame" x="0.0" y="291" width="600" height="19"/>
+                    <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vec-XK-d0A" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="790-5p-oUG"/>
+                <constraint firstItem="TUG-qM-6YY" firstAttribute="trailing" secondItem="vec-XK-d0A" secondAttribute="trailing" id="DcR-KR-FmW"/>
+                <constraint firstItem="TUG-qM-6YY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YD5-6r-NlA"/>
+                <constraint firstItem="vec-XK-d0A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dP3-f9-Gad"/>
+                <constraint firstItem="TUG-qM-6YY" firstAttribute="centerY" secondItem="vec-XK-d0A" secondAttribute="centerY" id="kA0-g8-Z9f"/>
+                <constraint firstItem="TUG-qM-6YY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w9t-8q-GGv"/>
+                <constraint firstItem="vec-XK-d0A" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yOe-Ma-J76"/>
+                <constraint firstAttribute="trailing" secondItem="vec-XK-d0A" secondAttribute="trailing" id="zar-Bs-gXi"/>
+            </constraints>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="vec-XK-d0A"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="w9t-8q-GGv"/>
+                    <include reference="790-5p-oUG"/>
+                    <include reference="dP3-f9-Gad"/>
+                    <include reference="yOe-Ma-J76"/>
+                    <include reference="zar-Bs-gXi"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
